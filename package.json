@@ -1,0 +1,18 @@
+{
+  "name": "botproject",
+  "version": "1.0.0",
+  "description": "Chat bot project with AI",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Firasath",
+  "license": "ISC",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "query-string": "^4.3.4"
+  }
+}

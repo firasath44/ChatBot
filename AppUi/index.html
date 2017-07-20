@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Third party css -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.css"/>
+  
+    <!-- Third party css - ENDS -->
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles/application.css"/>
+
+    <!-- Custom css - ENDS-->
+</head>
+<body ng-app="ChatbotApp">
+
+<div ng-controller="RootCtrl">
+    <div></div>
+   
+        <div ng-view="" class="col-md-12">
+        </div>
+
+       
+   
+</div>
+<!-- Third party scripts -->
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/moment/moment.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+
+
+
+
+<!-- Third party scripts --ENDS -->
+<!-- Custom Scripts -->
+<script src="scripts/app.js"></script>
+
+    <script src="scripts/controllers/chatBotController.js"></script>
+    <script src="scripts/services/chatBotService.js"></script>
+<!-- Custom Scripts-ENDS -->
+
+
+</body>
+</html>
