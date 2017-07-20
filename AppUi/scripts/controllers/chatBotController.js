@@ -10,6 +10,7 @@ angular.module('ChatbotApp')
         $scope.messageList = [];
         $scope.sendMessage = function () {
             if ($scope.validation()) {
+				
                 var message = { message: $scope.chatInput.inputMessage, user: "Me", lineLeft: true, time: moment().format('HH:mm') };
                 $scope.messageList.push(message);
                 console.log($scope.chatInput);
@@ -39,9 +40,10 @@ angular.module('ChatbotApp')
         };
         $scope.validation = function () {
             var isValid = true;
+			$scope.errorMsg="";
             if (!$scope.chatInput.inputMessage) {
                 isValid = false;
-                $scope.errorMsg="Please specify your answer"
+                $scope.errorMsg="Please specify your answer";
             }
             return isValid;
         };
